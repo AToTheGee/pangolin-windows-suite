@@ -1,0 +1,18 @@
+name: build
+
+on:
+  push:
+    branches: [main, dev]
+  pull_request:
+    branches: [main, dev]
+
+jobs:
+  placeholder:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Display build placeholder
+        run: |
+          Write-Host "TODO: Implement Windows build pipeline"
