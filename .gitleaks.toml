@@ -1,0 +1,16 @@
+[extend]
+path = ""
+
+[allowlist]
+paths = [
+  "docs/",
+  "apps/",
+  "pkg/"
+]
+
+[[rules]]
+id = "generic-api-key"
+pattern = '''(?i)api(_?key)?\s*[:=]\s*['\"][0-9a-z]{16,}['\"]'''
+tags = ["key", "generic"]
+
+[no-git]

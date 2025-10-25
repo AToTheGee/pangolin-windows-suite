@@ -1,0 +1,23 @@
+# Build artifacts
+/dist/
+/out/
+/build/
+*.msix
+*.msi
+*.zip
+
+# Logs and diagnostics
+*.log
+logs/
+*.etl
+
+# Temporary files
+*.tmp
+*.bak
+~*
+
+# Local tooling
+.env
+.vscode/
+.idea/
+.DS_Store

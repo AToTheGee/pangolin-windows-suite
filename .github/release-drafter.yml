@@ -1,0 +1,39 @@
+template: |
+  ## Zusammenfassung
+  $CHANGES
+
+  ## Hinweise
+  - SBOM und gitleaks laufen automatisch im `quality`-Workflow.
+
+name-template: 'v$RESOLVED_VERSION'
+tags:
+  exclude:
+    - draft
+categories:
+  - title: 🚀 Features
+    labels:
+      - feat
+      - feature
+  - title: 🛠 Fixes
+    labels:
+      - fix
+      - bug
+  - title: 🧹 Wartung
+    labels:
+      - chore
+      - refactor
+change-template: '- $TITLE (#$NUMBER) by @$AUTHOR'
+version-resolver:
+  major:
+    labels:
+      - major
+  minor:
+    labels:
+      - minor
+      - feat
+  patch:
+    labels:
+      - patch
+      - fix
+      - chore
+  default: patch
